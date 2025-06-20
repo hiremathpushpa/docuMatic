@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/hiremathpushpa/docuMatic/compare/v1.0.0...v1.1.0) (2025-06-20)
+
+
+### Features
+
+* add clear all functionality ([89b2143](https://github.com/hiremathpushpa/docuMatic/commit/89b2143185616e696fd0c69c81794cc655e9c17c))
+
 # 1.0.0 (2025-06-20)
 
 
