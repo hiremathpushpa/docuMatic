@@ -1,3 +1,11 @@
+## [1.1.2](https://github.com/hiremathpushpa/docuMatic/compare/v1.1.1...v1.1.2) (2025-06-20)
+
+
+### Bug Fixes
+
+* **release:** add npm plugin to update version file ([2a34bbb](https://github.com/hiremathpushpa/docuMatic/commit/2a34bbb1235f90cb45c4a4ea8787c763627f5601))
+* **release:** disable npm publish ([c5f7c51](https://github.com/hiremathpushpa/docuMatic/commit/c5f7c51bde31f16d8925567957d0931bf52989a4))
+
 ## [1.1.1](https://github.com/hiremathpushpa/docuMatic/compare/v1.1.0...v1.1.1) (2025-06-20)
 
 
