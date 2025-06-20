@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/hiremathpushpa/docuMatic/compare/v1.1.3...v1.2.0) (2025-06-20)
+
+
+### Features
+
+* update application title for demo ([a3b4e39](https://github.com/hiremathpushpa/docuMatic/commit/a3b4e39c693f44cc8581ddd9b0d6a16cfba34935))
+
 ## [1.1.3](https://github.com/hiremathpushpa/docuMatic/compare/v1.1.2...v1.1.3) (2025-06-20)
 
 
