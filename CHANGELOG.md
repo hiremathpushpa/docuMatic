@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/hiremathpushpa/docuMatic/compare/v1.3.0...v1.4.0) (2025-06-20)
+
+
+### Features
+
+* update app title to Task Manager ([4838e91](https://github.com/hiremathpushpa/docuMatic/commit/4838e91aa53f9a93256232b83d4ff162fca6f8c1))
+
 # [1.3.0](https://github.com/hiremathpushpa/docuMatic/compare/v1.2.2...v1.3.0) (2025-06-20)
 
 
