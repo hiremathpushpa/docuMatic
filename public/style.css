@@ -61,6 +61,20 @@ button:hover {
     background-color: #6a5acd;
 }
 
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+#clear-all-btn {
+    background-color: #ff4d4d;
+}
+
+#clear-all-btn:hover {
+    background-color: #e60000;
+}
+
 #todo-list {
     list-style: none;
     padding: 0;

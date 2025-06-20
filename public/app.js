@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const todoInput = document.getElementById('todo-input');
     const todoList = document.getElementById('todo-list');
     const versionTag = document.getElementById('version-tag');
+    const clearAllBtn = document.getElementById('clear-all-btn');
 
     let todos = JSON.parse(localStorage.getItem('todos')) || [];
 
@@ -53,6 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
             saveTodos();
             renderTodos();
         }
+    });
+
+    clearAllBtn.addEventListener('click', () => {
+        todos = [];
+        saveTodos();
+        renderTodos();
     });
 
     fetchVersion();

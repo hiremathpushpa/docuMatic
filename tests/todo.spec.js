@@ -29,4 +29,23 @@ test.describe('DocuMatic To-Do App', () => {
         // Make sure the task is gone
         await expect(page.locator('#todo-list li')).not.toBeVisible();
     });
+
+    test('should allow me to clear all todo items', async ({ page }) => {
+        // Add a few tasks
+        await page.fill('#todo-input', 'Task 1');
+        await page.click('button[type="submit"]');
+        await page.fill('#todo-input', 'Task 2');
+        await page.click('button[type="submit"]');
+
+        await expect(page.locator('#todo-list li')).toHaveCount(2);
+        
+        // Take a screenshot before clearing
+        await page.screenshot({ path: 'test-results/todo-app-before-clear.png' });
+
+        // Click the clear all button
+        await page.click('#clear-all-btn');
+
+        // Make sure the list is empty
+        await expect(page.locator('#todo-list li')).not.toBeVisible();
+    });
 }); 
