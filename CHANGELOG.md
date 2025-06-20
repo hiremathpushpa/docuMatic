@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/hiremathpushpa/docuMatic/compare/v1.2.0...v1.2.1) (2025-06-20)
+
+
+### Bug Fixes
+
+* clarify clear all button text ([33f8f1a](https://github.com/hiremathpushpa/docuMatic/commit/33f8f1a279fc96ade512023d472a7a75f6579e0a))
+
 # [1.2.0](https://github.com/hiremathpushpa/docuMatic/compare/v1.1.3...v1.2.0) (2025-06-20)
 
 
