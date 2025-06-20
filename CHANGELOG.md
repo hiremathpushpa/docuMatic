@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/hiremathpushpa/docuMatic/compare/v1.2.1...v1.2.2) (2025-06-20)
+
+
+### Bug Fixes
+
+* update add task button text ([e46da58](https://github.com/hiremathpushpa/docuMatic/commit/e46da58c7f235933a5ed7409217fc063e48b5a5c))
+
 ## [1.2.1](https://github.com/hiremathpushpa/docuMatic/compare/v1.2.0...v1.2.1) (2025-06-20)
 
 
