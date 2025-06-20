@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/hiremathpushpa/docuMatic/compare/v1.1.0...v1.1.1) (2025-06-20)
+
+
+### Bug Fixes
+
+* **release:** correct documentation generation order ([13908ef](https://github.com/hiremathpushpa/docuMatic/commit/13908efad17037409bf54d837448e222e4a3a64f))
+
 # [1.1.0](https://github.com/hiremathpushpa/docuMatic/compare/v1.0.0...v1.1.0) (2025-06-20)
 
 
