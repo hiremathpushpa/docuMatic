@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/hiremathpushpa/docuMatic/compare/v1.2.2...v1.3.0) (2025-06-20)
+
+
+### Features
+
+* add copyright to footer ([9464e8b](https://github.com/hiremathpushpa/docuMatic/commit/9464e8b6cae455d6871344ef2894ae0cab59796f))
+
 ## [1.2.2](https://github.com/hiremathpushpa/docuMatic/compare/v1.2.1...v1.2.2) (2025-06-20)
 
 
