@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/hiremathpushpa/docuMatic/compare/v1.1.2...v1.1.3) (2025-06-20)
+
+
+### Bug Fixes
+
+* improve input placeholder text ([893458a](https://github.com/hiremathpushpa/docuMatic/commit/893458a2a34bc7ec4695d68b801314cd1c8f5278))
+
 ## [1.1.2](https://github.com/hiremathpushpa/docuMatic/compare/v1.1.1...v1.1.2) (2025-06-20)
 
 
