@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/hiremathpushpa/docuMatic/compare/v1.4.0...v1.5.0) (2025-06-23)
+
+
+### Features
+
+* add edit task functionality ([73c2205](https://github.com/hiremathpushpa/docuMatic/commit/73c2205504c66149bcb50e03bb775710c8b5723c))
+
 # [1.4.0](https://github.com/hiremathpushpa/docuMatic/compare/v1.3.0...v1.4.0) (2025-06-20)
 
 
