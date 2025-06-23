@@ -93,6 +93,15 @@ li:last-child {
     border-bottom: none;
 }
 
+li .edit-input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #7b68ee;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
 li .actions button {
     background: none;
     border: none;

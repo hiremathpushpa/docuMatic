@@ -24,6 +24,7 @@ const generateAIDocumentation = (version, features) => {
 
         Include a section for adding tasks and show the screenshot 'todo-app-task-added.png'.
         Also include a section for clearing all tasks and show the screenshot 'todo-app-before-clear.png'.
+        Also include a section for editing tasks and show the screenshot 'todo-app-task-edited.png'.
     `;
 
     console.log('--- AI Prompt ---');
@@ -53,6 +54,14 @@ Here's what the application looks like with a few tasks before clearing them:
 
 ![Screenshot of tasks before clearing](./todo-app-before-clear.png)
 
+## Editing a Task
+
+You can edit an existing task by clicking the "Edit" button. This will turn the task into an input field where you can make changes. Click "Save" to update the task.
+
+Here is a task that has been successfully edited:
+
+![Screenshot of an edited task](./todo-app-task-edited.png)
+
 That's it!
     `;
 
@@ -72,6 +81,7 @@ const run = async () => {
         'Create a new task',
         'Delete a task',
         'Clear all tasks at once',
+        'Edit an existing task',
     ];
 
     const markdownContent = generateAIDocumentation(version, features);
@@ -93,6 +103,16 @@ const run = async () => {
         console.log(`📸 Copied screenshot to ${screenshotDest2}`);
     } else {
         console.warn(`❗️ Screenshot not found at ${screenshotSource2}. This may be expected if this version does not include this feature.`);
+    }
+
+    const screenshotSource3 = path.join(TEST_RESULTS_DIR, 'todo-app-task-edited.png');
+    const screenshotDest3 = path.join(versionedDocsDir, 'todo-app-task-edited.png');
+
+    if (fs.existsSync(screenshotSource3)) {
+        await fs.copy(screenshotSource3, screenshotDest3);
+        console.log(`📸 Copied screenshot to ${screenshotDest3}`);
+    } else {
+        console.warn(`❗️ Screenshot not found at ${screenshotSource3}. This may be expected if this version does not include this feature.`);
     }
 
     console.log('✅ Documentation generated successfully!');

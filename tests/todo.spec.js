@@ -48,4 +48,23 @@ test.describe('DocuMatic To-Do App', () => {
         // Make sure the list is empty
         await expect(page.locator('#todo-list li')).not.toBeVisible();
     });
+
+    test('should allow me to edit a todo item', async ({ page }) => {
+        // Add a task
+        await page.fill('#todo-input', 'Task to be edited');
+        await page.click('button[type="submit"]');
+        await expect(page.locator('#todo-list li')).toHaveText(/Task to be edited/);
+
+        // Click the edit button
+        await page.click('.edit-btn');
+
+        // Edit the task
+        const editInput = page.locator('.edit-input');
+        await editInput.fill('Task has been edited');
+        await page.click('.save-btn');
+
+        // Verify the task has been edited and take a screenshot
+        await expect(page.locator('#todo-list li')).toHaveText(/Task has been edited/);
+        await page.screenshot({ path: 'test-results/todo-app-task-edited.png' });
+    });
 }); 

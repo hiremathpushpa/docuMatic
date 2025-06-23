@@ -26,12 +26,24 @@ document.addEventListener('DOMContentLoaded', () => {
         todoList.innerHTML = '';
         todos.forEach((todo, index) => {
             const li = document.createElement('li');
-            li.innerHTML = `
-                <span>${todo.text}</span>
-                <div class="actions">
-                    <button class="delete-btn" data-index="${index}">Delete</button>
-                </div>
-            `;
+            li.dataset.index = index;
+
+            if (todo.isEditing) {
+                li.innerHTML = `
+                    <input type="text" class="edit-input" value="${todo.text}">
+                    <div class="actions">
+                        <button class="save-btn">Save</button>
+                    </div>
+                `;
+            } else {
+                li.innerHTML = `
+                    <span>${todo.text}</span>
+                    <div class="actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                `;
+            }
             todoList.appendChild(li);
         });
     };
@@ -48,11 +60,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     todoList.addEventListener('click', (e) => {
-        if (e.target.classList.contains('delete-btn')) {
-            const index = e.target.getAttribute('data-index');
+        const target = e.target;
+        const li = target.closest('li');
+        if (!li) return;
+
+        const index = parseInt(li.dataset.index, 10);
+
+        if (target.classList.contains('delete-btn')) {
             todos.splice(index, 1);
             saveTodos();
             renderTodos();
+        } else if (target.classList.contains('edit-btn')) {
+            todos.forEach((todo, i) => {
+                todo.isEditing = i === index;
+            });
+            renderTodos();
+            // Focus the new input field
+            const editInput = li.querySelector('.edit-input');
+            if(editInput) editInput.focus();
+        } else if (target.classList.contains('save-btn')) {
+            const editInput = li.querySelector('.edit-input');
+            if (editInput) {
+                todos[index].text = editInput.value;
+                todos[index].isEditing = false;
+                saveTodos();
+                renderTodos();
+            }
         }
     });
 
